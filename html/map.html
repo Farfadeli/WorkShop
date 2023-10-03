@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/maplibre-gl@3.3.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.3.0/dist/maplibre-gl.js"></script>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/map.css">
+    <title>Lokoloka</title>
+    <style>
+        .none{
+            display: none;
+        }
+        #map{
+            height: 600px;width: 90vw;border: 1px solid black;margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <img src="../images/logo_workshop.png" width="350" height="250">
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="container">
+        <div id="searchBar">
+            <input type="search" name="searchMap" placeholder="Rehchercher par adresse,latitude et longitude,...">
+            <div class="search-img">
+                <img src="../images/symbole-de-recherche-demplacement.png" alt="rechercher">
+            </div>
+        </div>
+        <div id="map"class="none"></div>
+    </section>
+
+    <script src="../javascript/app.js"></script>
+</body>
+</html>
