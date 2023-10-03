@@ -47,12 +47,12 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 
 
 async function calculateItineraire(lat1, lon1, lat2, lon2) {
-    const url = `https://trueway-matrix.p.rapidapi.com/CalculateDrivingMatrix?origins=${lat1}%2C${lon1}&destinations=${lat2}%2C${lon2}`;
+    const url = 'https://maptiles.p.rapidapi.com/fr/map/v1/4/8/5.png';
     const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '666972faa6msh21f2578098d6f57p1682f0jsna6288611fea3',
-            'X-RapidAPI-Host': 'trueway-matrix.p.rapidapi.com'
+            'X-RapidAPI-Host': 'maptiles.p.rapidapi.com'
         }
     };
 
