@@ -1,7 +1,7 @@
 let btn = document.querySelector("#btn-test")
 
 const success = (loc) =>{
-    console.log(lo.coords)
+    console.log(loc.coords)
 }
 
 const getCurrentPos = () =>{
